@@ -1,0 +1,29 @@
+body {
+  padding-top: 110px;
+  padding-bottom: 700px;
+  padding-left: 20px;
+}
+.title {
+  background-color: #E6F6CA;
+  margin-bottom: -100px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.artist:scroll {
+  color: black;
+}
+.artist {
+  color: black;
+}
+.row {
+  padding-left: 20px;
+}
+.min-height {
+  min-height: 300px;
+}
+.resized {
+  width: 250px;
+}
+.resized-photo {
+  background-size: cover;
+}

@@ -1,0 +1,47 @@
+<div class="row">
+  <div class="page-header">
+    <a href="/artists/{{id}}"><h1>{{name}} <small>{{genre}}</small></h1></a>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <a href="/artists/{{id}}" class="thumbnail">
+      <img src="{{image}}">
+    </a>
+  </div>
+</div>
+
+<h2>Edit {{name}}:</h2>
+<form action="/artists/edit/{{id}}" method="post">
+ <p>
+   <label for="name">Name:</label>
+   <input type="text" name="name" value="{{name}}">
+ </p>
+ <p>
+   <label for="image">Image URL:</label>
+   <input type="text" name="image" value="{{image}}">
+ </p>
+ <p>
+   <h5 style="font-weight: bold;">Songs:</h5>
+   <ul style="list-style: none;">
+     {{#each songs}}
+       <li>{{this}}</li>
+     {{/each}}
+   </ul>
+   <label for="song">Add Song:</label>
+   <input type="text" name="song" value="">
+ </p>
+ <p>
+   <h5 style="font-weight: bold;">Albums:</h5>
+   <ul style="list-style: none;">
+     {{#each albums}}
+       <li>{{this}}</li>
+     {{/each}}
+   </ul>
+   <label for="album">Add Album</label>
+   <input type="text" name="album" value="">
+ </p>
+ <p>
+   <label for="genre">Genre:</label>
+   <input type="text" name="genre" value="{{genre}}">
+ </p>
+ <button type="submit" name="submit">Submit</button>
+</form>

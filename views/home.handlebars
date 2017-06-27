@@ -1,0 +1,13 @@
+<div class="page-header">
+  <h1>Tunr <small>A Better Way To... See Your Artists</small></h1>
+</div>
+{{#each artists}}
+  <div class="col-xs-6 col-md-3 min-height">
+    <a href="/artists/{{id}}" class="thumbnail">
+      <img src="{{image}}">
+      <div class="caption">
+        <h3>{{name}}</h3>
+      </div>
+    </a>
+  </div>
+{{/each}}
